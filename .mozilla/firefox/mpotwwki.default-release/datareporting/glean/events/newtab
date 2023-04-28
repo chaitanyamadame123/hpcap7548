@@ -1,0 +1,10 @@
+{"timestamp":8217319,"category":"newtab","name":"opened","extra":{"source":"about:newtab","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}"}}
+{"timestamp":8217329,"category":"topsites","name":"impression","extra":{"newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"false"}}
+{"timestamp":8217330,"category":"topsites","name":"impression","extra":{"newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"false"}}
+{"timestamp":8217330,"category":"pocket","name":"impression","extra":{"is_sponsored":"false","position":"1","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}"}}
+{"timestamp":8217332,"category":"topsites","name":"impression","extra":{"newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"true"}}
+{"timestamp":8217334,"category":"pocket","name":"impression","extra":{"position":"2","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"false"}}
+{"timestamp":8217336,"category":"pocket","name":"impression","extra":{"position":"0","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"false"}}
+{"timestamp":8217337,"category":"topsites","name":"impression","extra":{"newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}","is_sponsored":"true"}}
+{"timestamp":8217338,"category":"topsites","name":"impression","extra":{"is_sponsored":"false","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}"}}
+{"timestamp":8217338,"category":"topsites","name":"impression","extra":{"is_sponsored":"false","newtab_visit_id":"{3d216dbe-9efa-4ef3-8d6d-d42173a90212}"}}

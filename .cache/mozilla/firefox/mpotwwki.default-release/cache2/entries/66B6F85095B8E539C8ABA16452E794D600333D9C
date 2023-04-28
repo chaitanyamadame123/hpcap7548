@@ -1,0 +1,679 @@
+
+
+
+
+
+<!DOCTYPE>
+
+<html>
+<head>
+
+ <script type="text/javascript" src='/feedbackSystem/js/jquery-1.11.3.js'></script> 
+
+
+<link rel="stylesheet" type="text/css" href='/feedbackSystem/css/template.css'>
+<link rel="stylesheet" type="text/css" href='/feedbackSystem/css/bootstrap.css'>
+
+<script>
+	$(document).ready(function() {
+		$("#theory-box").hide();
+		$("#lab-box").hide();
+	});
+
+	$(document).ready(function() {
+
+		$("#theory").click(function() {
+
+			$("#theory-box").show(700);
+			$("#lab-box").hide(700);
+
+		});
+	});
+
+	$(document).ready(function() {
+
+		$("#lab").click(function() {
+
+			$("#lab-box").show();
+			$("#theory-box").hide(500);
+
+		});
+	});
+
+	(function($) {
+		$(document).ready(function() {
+
+			$('#cssmenu > ul > li > a').click(function() {
+				$('#cssmenu li').removeClass('active');
+				$(this).closest('li').addClass('active');
+				var checkElement = $(this).next();
+				if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+					$(this).closest('li').removeClass('active');
+					checkElement.slideUp('normal');
+				}
+				if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+					$('#cssmenu ul ul:visible').slideUp('normal');
+					checkElement.slideDown('normal');
+				}
+				if ($(this).closest('li').find('ul').children().length == 0) {
+					return true;
+				} else {
+					return false;
+				}
+			});
+		});
+	})(jQuery);
+</script>
+
+</head>
+<body>
+	<table style="width:100%">
+		<tr>
+			<td  colspan="2">
+
+<div class="row">
+
+  <div class="col-md-12">
+  	<img class="img-responsive" width="100%" src='/feedbackSystem/images/Header.jpg'>
+  	<!-- <div style="text-align:right;"><form action="/feedbackSystem/login/logoutSession/logout"><input type="submit" id="logout" value="" style="background:url(../images/logout-icon-wt-text.png);  background-repeat:no-repeat; width:7%; height:25px; float:right; margin-left:110px; color:#0d3364 "  /></form></div> -->
+  </div>
+  
+</div>
+		</tr>
+		<tr>
+		<td  colspan="2">
+
+
+<!-- <div class="nav"> -->
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+function setFid(fid)
+{
+
+	$("#fid1").val(fid);
+	frm.submit();
+	}
+
+</script>
+<!--  <form action="/feedbackSystem/login/feed/feedbackpageShow" name="frm"
+		method="post">
+		<input type="hidden" name="fid1" id="fid1"> <a href="#"
+			id="theory" name="btn" class="action-button shadow animate blue">Theory</a>
+		<a href="#" id="lab" name="btn"
+			class="action-button shadow animate red">Lab</a> <br />
+		<br /> <br /> <br />
+		<center>
+			<div id="theory-box">
+
+				<div id="cssmenu">
+					<ul>
+						<li class='has-sub'><a><span>Mid Module</span></a>
+							<ul>
+
+								
+									
+
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(239129)">
+													LSP&PHP(Mr. Dheeraj Madhukar) for
+													Session 11 </a>
+											</div>
+										</li>
+									
+
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240661)">
+													Apti&EC(Mr.Sumant Tiwari) for
+													Session 3 </a>
+											</div>
+										</li>
+									
+
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240701)">
+													Cloud&Dep(Mr.Atul Kahate) for
+													Session 3 </a>
+											</div>
+										</li>
+									
+									<li></li>
+								
+
+							</ul></li>
+						<li class='has-sub'><a><span>End Module</span></a>
+							<ul>
+
+
+
+								
+
+
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+			<br /> <br />
+
+
+
+			<div id="lab-box">
+				<div id="cssmenu">
+					<ul>
+						<li class='has-sub'><a><span>Mid Module</span></a>
+							<ul>
+								
+									
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(239144)">
+													LSP&PHP(Mr. Dheeraj Madhukar) for
+													Session 11 </a>
+											</div>
+											<br>
+										</li>
+										<li></li>
+									
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240716)">
+													Cloud&Dep(Mr. Vivek Kumar) for
+													Session 3 </a>
+											</div>
+											<br>
+										</li>
+										<li></li>
+									
+								
+							</ul></li>
+						<li class='has-sub'><a><span>End Module</span></a>
+							<ul>
+								
+							</ul></li>
+
+					</ul>
+				</div>
+
+
+			</div>
+		</center>
+	</form>
+</div>  -->
+
+<div id="wrapper">
+	<table style="width: 100%; line-height: 5px;">
+		<tr>
+			<td style="padding-left: 470px"><font color="#5e616a"><b>Welcome
+						to Online Feedback System</b></font></td>
+
+			<!--  <td
+				style="position: absolute; top: 230px; left: 16px; font-size: 16px;">Email-Id
+				: <font color="#1961a6">chaitanyamadame5@gmail.com</font> 
+			</td>-->
+
+			<!-- <td  align="RIGHT" >
+
+        </td> -->
+			<td style="width: 4%"><a href="/feedbackSystem/login/feede"
+				class="">Home <span class="glyphicon glyphicon-home"></span>
+			</a> |</td>
+
+			<td style="width: 10%"><a href="studentChangePassword" class="">&nbsp;Change
+					Password &nbsp;<span class="glyphicon glyphicon-lock"></span>
+			</a>&nbsp;|</td>
+
+
+
+			<td>
+				<form action="/feedbackSystem/login/logoutSession/logout">
+					<input type="submit" id="logout" value=""  />
+				</form>
+			</td>
+
+		</tr>
+		<!--<tr>
+			<td colspan="2" style="padding-left: 470px"><font
+				color="#1961a6"><b>230340141006(Chaitanya Anilkumar Madame)</b></font>
+			</td>
+
+			  <td style="padding-left:1px">Email-Id : chaitanyamadame5@gmail.com</td>-->
+
+		<!--	</tr>-->
+	</table>
+</div>
+<form action="/feedbackSystem/login/feed/feedbackpageShow" name="frm"
+	method="post">
+	<input type="hidden" name="fid1" id="fid1"> <input
+		type="hidden" name="formno1" id="formno1"
+		value=230340141006> <input type="hidden"
+		name="amount" id="amount" value="100">
+
+	<!-- <div id="menu"> -->
+	<ul id="nav">
+		<!-- <li><a href="/feedbackSystem/login/feedback/schedule" class="drop"><font size="2" face="Arial"><b>Schedule Feedback</b></font></a></li>
+<li><a href="/feedbackSystem/login/feedback/coursePlan" class="drop"><font size="2" face="Arial"><b>View Course Plan</b></font></a></li>
+<li><a href="#" class="drop"><font size="2" face="Arial"><b>Manage Faculty</b></font></a>
+<ul class="nav first">
+ <li><a href='/feedbackSystem/login/faculty/addFaculty'><font size="2" face="Arial">Add Faculty</font></a></li>
+            <li><a href='/feedbackSystem/login/faculty/viewFaculty'><font size="2" face="Arial">View Faculty </font></a></li>
+            <li><a href='/feedbackSystem/login/faculty/assign_faculty'><font size="2" face="Arial">Assign Faculty</font></a></li>
+            
+</ul>
+
+</li>
+ -->
+		<li><a href="#" class="drop">Theory</a>
+
+			<ul class="nav first">
+				<!-- <li>Menu 1</li>
+            <li>Menu 2</li> -->
+				<li><a href="#" class="right">Mid Module</a> 
+						<ul class="nav">
+							
+
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(239129)">
+											LSP&PHP(Mr. Dheeraj Madhukar) for
+											Session 11 </a>
+									</div>
+									
+								</li>
+
+							
+
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240661)">
+											Apti&EC(Mr.Sumant Tiwari) for
+											Session 3 </a>
+									</div>
+									
+								</li>
+
+							
+
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240701)">
+											Cloud&Dep(Mr.Atul Kahate) for
+											Session 3 </a>
+									</div>
+									
+								</li>
+
+							
+							<li></li>
+						</ul>
+					</li>
+				<li><a href="#" class="right">End Module</a>  <!--  <ul class="nav">
+	            <li>Menu 1</li>
+	            <li>Menu 2</li>
+	            <li>Menu 3</li>
+	            <li>Menu 4</li>
+	        </ul>		 --></li>
+			</ul></li>
+		<li><a href="#" class="drop">Lab</a>
+			<ul class="nav first">
+				<li><a href="#" class="right">Mid Module</a> 
+						<ul class="nav">
+							
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(239144)">
+											LSP&PHP(Mr. Dheeraj Madhukar) for
+											Session 11 </a>
+									</div>
+								
+								</li>
+								<li></li>
+
+							
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240716)">
+											Cloud&Dep(Mr. Vivek Kumar) for
+											Session 3 </a>
+									</div>
+								
+								</li>
+								<li></li>
+
+							
+						</ul>
+					</li>
+				<li><a href="#" class="right">End Module</a> </li>
+			</ul></li>
+<!--  test="true">  -->
+	<!--  	-->
+
+
+		<!--
+			<li><a
+				href="/feedbackSystem/login/feedback/viewMakeTransportationPayment"
+				class="drop">Transport Payment</a></li>
+		
+
+		
+		
+		-->
+
+
+		<!--  <li>Menu 2</li>
+    <li>Menu 3</li>
+    <li>Menu 4</li> -->
+	</ul>
+
+</form>
+
+<!-- <ul class="pull-right" id="nav">
+		<li> -->
+<div style="float: right; top: -19px;"
+	class="col-lg-3 col-md-3 col-sm-3">
+	<div style="right: 6px; border-style: ridge;"
+		class="panel panel-primary pull-right">
+
+		<div class="panel-heading" style="font-size: 12px">User Profile</div>
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+
+			<!--  <tr class="panel-heading"><h5 class="glyphicon glyphicon-user" style="font-weight: bold; font-size: 12px;"> UserProfile</h5></tr>-->
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">Name</h6></font></td>
+				<td></td>
+				<td><h6>Chaitanya Anilkumar Madame</h6></td>
+			</tr>
+
+			<tr height="2"></tr>
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">PRN</h6></font></td>
+				<td></td>
+				<td><h6>230340141006</h6></td>
+			</tr>
+
+			<tr height="2"></tr>
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">Email</h6></font></td>
+				<td>&nbsp;&nbsp;</td>
+				<td style="overflow-wrap: anywhere; word-break: break-word;"><h6>chaitanyamadame5@gmail.com</h6></td>
+			</tr>
+
+
+		</table>
+	</div>
+</div>
+<!--</li>
+	</ul> -->
+
+
+
+		</tr>
+		<tr>
+		<td  colspan="2" align="center" ><div id="content"  >
+					
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#myModal").modal('show');
+	});
+</script>
+
+
+
+
+</head>
+<body>
+<!-- 		 -->
+ <div style="height: 500px; margin-top: -95px;">
+			<!-- <ul> -->
+			
+				<div class="container" style="width: 1000px" align="left">
+					<h2></h2>
+					<div class="col-lg-10 col-md-11 col-sm-2 col-xs-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">Feedback Scheduled</div>
+							<div class="panel-body">
+								
+									<b> Theory</b>
+									<br />
+								
+								
+
+									<!-- <li><span> -->
+									<font color="#0089e6">Mid Module</font>
+									<!-- </span>
+				<ul> -->
+									
+
+										<!-- <li> -->
+										
+											
+										<div>
+											LSP&PHP(Mr. Dheeraj Madhukar) for
+											Session 11</div>
+											
+										<br />
+										<!-- </li> -->
+									
+
+										<!-- <li> -->
+										
+											
+										<div>
+											Apti&EC(Mr.Sumant Tiwari) for
+											Session 3</div>
+											
+										<br />
+										<!-- </li> -->
+									
+
+										<!-- <li> -->
+										
+											
+										<div>
+											Cloud&Dep(Mr.Atul Kahate) for
+											Session 3</div>
+											
+										<br />
+										<!-- </li> -->
+									
+									<!-- </ul> -->
+								
+
+
+								
+								<!-- </ul> -->
+								
+								
+								
+								
+								
+								<br />
+								
+									<!-- <ul>
+			<li><span> -->
+									<!-- <font color="#0089e6">Mid Module</font> -->
+									<!-- </span><ul> -->
+									
+										<!-- <li>	 -->
+										
+										
+										<font color="#0089e6">Mid Module</font>
+										<div>
+											LSP&PHP(Mr. Dheeraj Madhukar) for
+											Session 11</div>
+										<br>
+										<!-- 	</li> -->
+									
+										<!-- <li>	 -->
+										
+										
+										<font color="#0089e6">Mid Module</font>
+										<div>
+											Cloud&Dep(Mr. Vivek Kumar) for
+											Session 3</div>
+										<br>
+										<!-- 	</li> -->
+									
+									<!-- </ul></li>	</ul> -->
+								
+
+								<!-- <li> -->
+								<!-- <span> -->
+								<!-- </span> -->
+								<!-- <ul> -->
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			<!-- </ul> -->
+		</div>
+
+		
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+			aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel" style="color: red;">Instructions</h4>
+					</div>
+					<div class="modal-body">
+						<table>
+							<tr>
+								<td><b>General information</b></td>
+							</tr>
+							<tr>
+								<td>1.C-DAC has a feedback system, which is made accessible
+									to all the students during the progress of each module.</td>
+							</tr>
+							<tr>
+								<td>2.The feedback of faculty is taken for all the modules
+									through this feedback system.</td>
+							</tr>
+							<tr>
+								<td>3.The feedback process is scheduled by the respective
+									centre and the url for the same is shared with the students.</td>
+							</tr>
+							<tr>
+								<td>4.The feedback schedule is categorised as Mid module
+									and End module. The frequency of Mid Module feedback ranges
+									from 3 to 5 times, depending on the duration of the respective
+									modules and for the End Module it is taken only once at the end
+									of the module.</td>
+							</tr>
+							<tr>
+								<td><b>Do's</b></td>
+							</tr>
+							<tr>
+								<td>1.Giving the module wise feedback is compulsory.</td>
+							</tr>
+							<tr>
+								<td>2.You can log-in anytime anywhere as it is a web based application and give the feedback during the scheduled dates. Note: After the scheduled dates the feedback cannot be given.</td>
+							</tr>					
+							<tr>
+								<td>3.You should give the feedback independently, specifically on the aspects of teaching.</td>
+							</tr>						
+							<tr>
+								<td>4.Your Feedback is very important in order to improve the teaching quality and it will make the system robust, so do participate in the process.</td>
+							</tr>
+							
+							<tr>
+								<td><b>Dont's</b></td>
+							</tr>							
+							<tr>
+								<td>1.	Do not give feedback under the influence of anybody or Institute</td>
+							</tr>					
+							<tr>
+								<td>2.	Personal prejudices should not dictate the feedback. The system is in place to identify such cases.</td>
+							</tr>
+						</table>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+<!-- 
+	 -->
+
+
+</body>
+
+</html>
+				</div>
+				</td>
+		</tr>
+		
+
+		<tr>
+			<td  colspan="2" align="center">
+				<div id="footer" class="changeFont">
+					2016 C-DAC Â© All Rights Reserved
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+tAåýå1      dKCFdKCGE„¼kdKCG   k    O^partitionKey=%28https%2Ccdac.in%29,~1682653941,:https://actsfeedback.cdac.in/feedbackSystem/login/logmein necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEAOQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAZPMIIGSzCCBTOgAwIBAgIQXXa4w1e00NWjcH2FzQl9HjANBgkqhkiG9w0BAQsFADCBjzELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEYMBYGA1UEChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQDEy5TZWN0aWdvIFJTQSBEb21haW4gVmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENBMB4XDTIzMDQxNzAwMDAwMFoXDTI0MDQxNjIzNTk1OVowHzEdMBsGA1UEAxMUYWN0c2ZlZWRiYWNrLmNkYWMuaW4wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDb9oypg4ZrXStZq7OPis1gTMcTG2YsfjemCWBqV//TqltERoAjJBAZXVa2PBtd3U3WpSOXVVQOLkU8UPWVArZIGKPlJEZdewhR4QfIp85Er6sqw7dZLPikbSKuuPu9VNl5wf1rdziVeIaWM2QfGbIzGZeHny0vln433SDaIllimZWDgEsOiqPydF5Audcbs0mZQjiqN1eK6j1YAtKvGt6IqdbwVpRfikoyuhY1ZYN8B4wpv4SYDJw0Qku24IlOKvtVoKLZhK6/+BFJPJRzncMtoyH5q6ZeNjE9ZZtwWJkOjcJaroVIKrlK3DZcogKrK6UyjRBIYU88Q3xNY5uNzJkFAgMBAAGjggMQMIIDDDAfBgNVHSMEGDAWgBSNjF7EVK2K4Xfpm/mbBeG4AY1h4TAdBgNVHQ4EFgQUid+APvqslqOJnERrUivVIrXnFUswDgYDVR0PAQH/BAQDAgWgMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMEkGA1UdIARCMEAwNAYLKwYBBAGyMQECAgcwJTAjBggrBgEFBQcCARYXaHR0cHM6Ly9zZWN0aWdvLmNvbS9DUFMwCAYGZ4EMAQIBMIGEBggrBgEFBQcBAQR4MHYwTwYIKwYBBQUHMAKGQ2h0dHA6Ly9jcnQuc2VjdGlnby5jb20vU2VjdGlnb1JTQURvbWFpblZhbGlkYXRpb25TZWN1cmVTZXJ2ZXJDQS5jcnQwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNlY3RpZ28uY29tMDkGA1UdEQQyMDCCFGFjdHNmZWVkYmFjay5jZGFjLmlughh3d3cuYWN0c2ZlZWRiYWNrLmNkYWMuaW4wggF+BgorBgEEAdZ5AgQCBIIBbgSCAWoBaAB3AHb/iD8KtvuVUcJhzPWHujS0pM27KdxoQgqf5mdMWjp0AAABh47KMooAAAQDAEgwRgIhAMFWMGihtx4HDzETIwGT932kSLQ/cOL0e3XBQhU1LpBHAiEAmiKWmCYR2MKIcpJHsW6n8PMNXwJP1MNDccs+zd1fP8EAdgDatr9rP7W2Ip+bwrtca+hwkXFsu1GEhTS9pD0wSNf7qwAAAYeOyjLoAAAEAwBHMEUCIQCqkxFQEcC/8ssziXwGkGrjZ2egS5+Nct4UMHXbHw3CCgIgVgYn4yeyqe2k5BaVRa8YHPr36qqWxTwlC7UsaroESNcAdQDuzdBk1dsazsVct520zROiModGfLzs3sNRSFlGcR+1mwAAAYeOyjMHAAAEAwBGMEQCIHPmGPfBxCQVhPOItYCisXUfkTtnj0aELo735MyLYQS2AiALWSKEPFzt6lc8wsRRKJTJ+F5fEWF7iR95SV7FioceoTANBgkqhkiG9w0BAQsFAAOCAQEAPYivAXpu4WCzIcoxfsTFoM/3Vd0JjlUjlVLoS6rGPIEp2NwLmHw+iWsTXXVr58Krs3CwsZGWmzE2CuqGOMFeKxys+PNHBDVb8xtQsoMOz2ag0FuFIrx8aWngziJIURmU2Ife4l/tBIdIyg2gf/O/Ko99cO7W2DQgFfonERtFZ1jvO/fuvCq28glvYuJ0hwHqO0iFjjX8s5Rl+KjQttz5SCbgDFnW0MrzFGCNylKwLYKRC+a31DMHcBxF9OXf6fneyg7iHn3zGOIeIxoYSzhJCRe9GBqsrnMdFwLNJ08Ps3efbYTst7doAGXk0ELSqeaMGG2r4lqdfoc7jU0JWM5m58AvAAMAAAAAAAEBAAAAAAAABG5vbmUAAAAOUlNBLVBTUy1TSEEyNTYAA2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABk8wggZLMIIFM6ADAgECAhBddrjDV7TQ1aNwfYXNCX0eMA0GCSqGSIb3DQEBCwUAMIGPMQswCQYDVQQGEwJHQjEbMBkGA1UECBMSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHEwdTYWxmb3JkMRgwFgYDVQQKEw9TZWN0aWdvIExpbWl0ZWQxNzA1BgNVBAMTLlNlY3RpZ28gUlNBIERvbWFpbiBWYWxpZGF0aW9uIFNlY3VyZSBTZXJ2ZXIgQ0EwHhcNMjMwNDE3MDAwMDAwWhcNMjQwNDE2MjM1OTU5WjAfMR0wGwYDVQQDExRhY3RzZmVlZGJhY2suY2RhYy5pbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANv2jKmDhmtdK1mrs4+KzWBMxxMbZix+N6YJYGpX/9OqW0RGgCMkEBldVrY8G13dTdalI5dVVA4uRTxQ9ZUCtkgYo+UkRl17CFHhB8inzkSvqyrDt1ks+KRtIq64+71U2XnB/Wt3OJV4hpYzZB8ZsjMZl4efLS+WfjfdINoiWWKZlYOASw6Ko/J0XkC51xuzSZlCOKo3V4rqPVgC0q8a3oip1vBWlF+KSjK6FjVlg3wHjCm/hJgMnDRCS7bgiU4q+1WgotmErr/4EUk8lHOdwy2jIfmrpl42MT1lm3BYmQ6NwlquhUgquUrcNlyiAqsrpTKNEEhhTzxDfE1jm43MmQUCAwEAAaOCAxAwggMMMB8GA1UdIwQYMBaAFI2MXsRUrYrhd+mb+ZsF4bgBjWHhMB0GA1UdDgQWBBSJ34A++qyWo4mcRGtSK9UitecVSzAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwSQYDVR0gBEIwQDA0BgsrBgEEAbIxAQICBzAlMCMGCCsGAQUFBwIBFhdodHRwczovL3NlY3RpZ28uY29tL0NQUzAIBgZngQwBAgEwgYQGCCsGAQUFBwEBBHgwdjBPBggrBgEFBQcwAoZDaHR0cDovL2NydC5zZWN0aWdvLmNvbS9TZWN0aWdvUlNBRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNydDAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Auc2VjdGlnby5jb20wOQYDVR0RBDIwMIIUYWN0c2ZlZWRiYWNrLmNkYWMuaW6CGHd3dy5hY3RzZmVlZGJhY2suY2RhYy5pbjCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHcAdv+IPwq2+5VRwmHM9Ye6NLSkzbsp3GhCCp/mZ0xaOnQAAAGHjsoyigAABAMASDBGAiEAwVYwaKG3HgcPMRMjAZP3faRItD9w4vR7dcFCFTUukEcCIQCaIpaYJhHYwohykkexbqfw8w1fAk/Uw0Nxyz7N3V8/wQB2ANq2v2s/tbYin5vCu1xr6HCRcWy7UYSFNL2kPTBI1/urAAABh47KMugAAAQDAEcwRQIhAKqTEVARwL/yyzOJfAaQauNnZ6BLn41y3hQwddsfDcIKAiBWBifjJ7Kp7aTkFpVFrxgc+vfqqpbFPCULtSxqugRI1wB1AO7N0GTV2xrOxVy3nbTNE6Iyh0Z8vOzew1FIWUZxH7WbAAABh47KMwcAAAQDAEYwRAIgc+YY98HEJBWE84i1gKKxdR+RO2ePRoQujvfkzIthBLYCIAtZIoQ8XO3qVzzCxFEolMn4Xl8RYXuJH3lJXsWKhx6hMA0GCSqGSIb3DQEBCwUAA4IBAQA9iK8Bem7hYLMhyjF+xMWgz/dV3QmOVSOVUuhLqsY8gSnY3AuYfD6JaxNddWvnwquzcLCxkZabMTYK6oY4wV4rHKz480cENVvzG1Cygw7PZqDQW4UivHxpaeDOIkhRGZTYh97iX+0Eh0jKDaB/878qj31w7tbYNCAV+icRG0VnWO879+68KrbyCW9i4nSHAeo7SIWONfyzlGX4qNC23PlIJuAMWdbQyvMUYI3KUrAtgpEL5rfUMwdwHEX05d/p+d7KDuIeffMY4h4jGhhLOEkJF70YGqyucx0XAs0nTw+zd59thOy3t2gAZeTQQtKp5owYbaviWp1+hzuNTQlYzmbnZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAGFzCCBhMwggP7oAMCAQICEH1bUSa0droR23QWC7xTDacwDQYJKoZIhvcNAQEMBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTE4MTEwMjAwMDAwMFoXDTMwMTIzMTIzNTk1OVowgY8xCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNVBAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UEAxMuU2VjdGlnbyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANZzM9bXPCDQANIXRbjWPgeiP8dB7jIwybBs/fSfyxKYDy0/jU0BDIIPF39iLum4SHn7FoNOrdcyJZO3B7+5UD+pTMNAKuk5/9mByh8WMkHagCa5I3qHIB7j/yCaPJVEb4d1BpBAtDKTFgkQCCM+0t2HD29dURRqCmnFTwFyac/Tk0xtBKCjG4J+sZq57cWexTd4n5oINPtWLljECQ4GZFu8N9zxnyhoqFawkqNcn7uImAgbJB2rMIWur7AunnqdwcBCHOIC8OrgStLvkA60wUAW8G+FQkpk96QwoP6/LqMnWo6LWLitwxkXhGPtb1b9g8tgNMR0vuad2+Hk5coMXxUCAwEAAaOCAW4wggFqMB8GA1UdIwQYMBaAFFN5v1qqK0rPVIDh2JvAnfKyA2bLMB0GA1UdDgQWBBSNjF7EVK2K4Xfpm/mbBeG4AY1h4TAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwGwYDVR0gBBQwEjAGBgRVHSAAMAgGBmeBDAECATBQBgNVHR8ESTBHMEWgQ6BBhj9odHRwOi8vY3JsLnVzZXJ0cnVzdC5jb20vVVNFUlRydXN0UlNBQ2VydGlmaWNhdGlvbkF1dGhvcml0eS5jcmwwdgYIKwYBBQUHAQEEajBoMD8GCCsGAQUFBzAChjNodHRwOi8vY3J0LnVzZXJ0cnVzdC5jb20vVVNFUlRydXN0UlNBQWRkVHJ1c3RDQS5jcnQwJQYIKwYBBQUHMAGGGWh0dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wDQYJKoZIhvcNAQEMBQADggIBADK/Yb0OSMNPx7pHTficeBkB3BMdgG/8w3C0UpoxM5pXUvsxnmuk71SqiY1AF2j4ERB80sqx8VWGx+6zNpGG9jlRv0a/D6C6tPd+ScQqNhee5Gg5eq+UTlZvsns7vwqGvc3FdxwDuDixoh9fftuK3EZItmgKz7K1tOI05GepOGYJXtK4/J0oOhdAJ8JyTin9ITx8zxP7lizFMUT9E+3Vm6lpaHd87uH/pPk2OAhTOaKENJwZ874OrNUkN+sjqHjQ0+fvkkdkYjki78b3Eb4ihcZmRCQmjhAyjciTrgeegz4v2fn1Ro5jvsHmtNymzSGohgqV2S6FJhr9/LG2V0JtldEz9jkUBoJBOPWPWNyAW6TVfZV4/aeb//3FqGmrJuenpAWHW6m3uKMgC5epRYXds4vliTeOKQ38Bhf2OEAOQuQSBvt788YRaGLf45j0E9gVT4uxadkQYLxkKuoxt+S1ozoUmybjC3v9Ao62mcE4l1k29qh0ooa2XuvGZOrPoKP5bp66LRG2hpgIWC3JrCVk8l51tDjBrn9aRoPqUcq28ZkRNWulanvGALDn+L5ksq3IwvGs41HqpJPgecjhgUDJClvhEjzBYCrjl8CJQsqUz0aYEmm7mNDC0w1yS0du5ZPEMihjh0PksDI+CtNLvyObFClBK5oEH5Mt8cc5SDytWhJ/ZgoyJpFcT/u7IImFpjLfBb3Dl5pUIkzVhYlpa26W6oMAAAAAAAAF4jCCBd4wggPGoAMCAQICEAH9bTD8o8pRqBu8ZA41Ay0wDQYJKoZIhvcNAQEMBQAwgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTEwMDIwMTAwMDAwMFoXDTM4MDExODIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBOZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sIs9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnGvDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQIjy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfbIWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97Exwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNVicQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJWBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzGKAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaNCMEAwHQYDVR0OBBYEFFN5v1qqK0rPVIDh2JvAnfKyA2bLMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBDAUAA4ICAQBc1HwNz/cBfUGZZQxzxVKfy/jPmQZ/G9pDFZ+eAlVXlhTxUjwnh5Qo7R86ATeidvxTUMCEm8ZrTrqMIU+ijlVikfNpFdi8iOPEqgv976jpS1UqBiBtVXgpGe5fMFxLJBFV/ySabl4qK+4LTZ9/9wE4lBSVQwcJ+2Cp7hyrEoygml6nmGpZbYs/CPvI0UWvGBVkkBIPcyguxeIkTvxY7PD0Rf4is+svjtLZRWEFwZdvqHZyj4uMNq+/DQXOcY3mpm8fbKZxYsXY0INyDPFnEYkMnBNMcjTfvNVx36px3eG5bIw8El1l2r1XErZDa//l3k1mEVHPma7sF7bocZGM3kn+3TVxohUnlBzPYeMmu2+jZyUhXebdHQsuaBs7gq/sg2eF1JhRdLG5mYCJ/394GVx5SmAukkCuTDcqLMnHYsgOXfc2W8rgJSUBtN0aB5x3AD/Q3NXsPdT6uz/MhdZvf6kt37kC9/WXmrU12sNnsIdKqSieI47/XCdr4bBP8wfuAC7UWYfLUkGV6vRH1+5kQVV8jVkCld1incK57loodISlm7eQxwwH3/WJNnQy1ijBsLAL4JxMwxzW/ONptUdGgS+igqvTY0RwxI3/LTO6rY97tXCIrj4Zz0Ao2PzIkLtdmSL1UuZYxR+IMUPuiB3Xxo48Q2odpxjefT0W8WL5ypCo/QAAAAEAAAAIaHR0cC8xLjEBAQAAAABOdGxzZmxhZ3MweDAwMDAwMDAwOmFjdHNmZWVkYmFjay5jZGFjLmluOjQ0M15wYXJ0aXRpb25LZXk9JTI4aHR0cHMlMkNjZGFjLmluJTI5AAA= request-method POST response-head HTTP/1.1 200 
+Server: nginx/1.14.1
+Date: Fri, 28 Apr 2023 03:54:44 GMT
+Content-Type: text/html;charset=utf-8
+Content-Language: en-US
+ original-response-headers Server: nginx/1.14.1
+Date: Fri, 28 Apr 2023 03:54:44 GMT
+Content-Type: text/html;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Language: en-US
+ ctid 1 uncompressed-len 0 net-response-time-onstart 538 net-response-time-onstop 558   @

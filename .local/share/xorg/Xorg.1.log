@@ -1,0 +1,488 @@
+[   177.393] _XSERVTransSocketUNIXCreateListener: ...SocketCreateListener() failed
+[   177.394] _XSERVTransMakeAllCOTSServerListeners: server already running
+[   177.394] (--) Log file renamed from "/home/hpcap/.local/share/xorg/Xorg.pid-2012.log" to "/home/hpcap/.local/share/xorg/Xorg.1.log"
+[   177.395] 
+X.Org X Server 1.20.13
+X Protocol Version 11, Revision 0
+[   177.395] Build Operating System: linux Ubuntu
+[   177.395] Current Operating System: Linux hpcap-DIT400TR-55L 5.15.0-71-generic #78~20.04.1-Ubuntu SMP Wed Apr 19 11:26:48 UTC 2023 x86_64
+[   177.395] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-71-generic root=UUID=8a871e5c-4e0a-47ff-92e2-b8e38de8050a ro quiet splash vt.handoff=7
+[   177.395] Build Date: 29 March 2023  12:53:02PM
+[   177.395] xorg-server 2:1.20.13-1ubuntu1~20.04.8 (For technical support please see http://www.ubuntu.com/support) 
+[   177.395] Current version of pixman: 0.38.4
+[   177.395] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   177.395] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   177.396] (==) Log file: "/home/hpcap/.local/share/xorg/Xorg.1.log", Time: Fri Apr 28 08:39:52 2023
+[   177.396] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   177.397] (==) No Layout section.  Using the first Screen section.
+[   177.397] (==) No screen section available. Using defaults.
+[   177.397] (**) |-->Screen "Default Screen Section" (0)
+[   177.397] (**) |   |-->Monitor "<default monitor>"
+[   177.398] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[   177.398] (==) Automatically adding devices
+[   177.398] (==) Automatically enabling devices
+[   177.398] (==) Automatically adding GPU devices
+[   177.398] (==) Automatically binding GPU devices
+[   177.398] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[   177.398] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[   177.398] 	Entry deleted from font path.
+[   177.398] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[   177.398] 	Entry deleted from font path.
+[   177.398] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[   177.398] 	Entry deleted from font path.
+[   177.398] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[   177.398] 	Entry deleted from font path.
+[   177.398] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[   177.398] 	Entry deleted from font path.
+[   177.398] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[   177.399] (==) ModulePath set to "/usr/lib/xorg/modules"
+[   177.399] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[   177.399] (II) Loader magic: 0x55a5fc2d6020
+[   177.399] (II) Module ABI versions:
+[   177.399] 	X.Org ANSI C Emulation: 0.4
+[   177.399] 	X.Org Video Driver: 24.1
+[   177.399] 	X.Org XInput driver : 24.1
+[   177.399] 	X.Org Server Extension : 10.0
+[   177.400] (++) using VT number 2
+
+[   177.402] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_32
+[   177.404] (II) xfree86: Adding drm device (/dev/dri/card0)
+[   177.404] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[   177.405] (II) xfree86: Adding drm device (/dev/dri/card1)
+[   177.406] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 14 paused 0
+[   177.423] (--) PCI:*(3@0:0:0) 1a03:2000:1a03:2000 rev 65, Mem @ 0xa9000000/16777216, 0xaa000000/131072, I/O @ 0x00002000/128, BIOS @ 0x????????/131072
+[   177.423] (--) PCI: (101@0:0:0) 1002:6995:1002:0b0c rev 0, Mem @ 0x32000000000/2147483648, 0x32080000000/2097152, 0xe0e00000/262144, I/O @ 0x0000b000/256, BIOS @ 0x????????/131072
+[   177.423] (II) LoadModule: "glx"
+[   177.424] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[   177.424] (II) Module glx: vendor="X.Org Foundation"
+[   177.424] 	compiled for 1.20.13, module version = 1.0.0
+[   177.424] 	ABI class: X.Org Server Extension, version 10.0
+[   177.424] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[   177.424] 	loading driver: amdgpu
+[   177.424] (==) Matched ast as autoconfigured driver 0
+[   177.424] (==) Matched amdgpu as autoconfigured driver 1
+[   177.424] (==) Matched ati as autoconfigured driver 2
+[   177.424] (==) Matched modesetting as autoconfigured driver 3
+[   177.424] (==) Matched fbdev as autoconfigured driver 4
+[   177.424] (==) Matched vesa as autoconfigured driver 5
+[   177.424] (==) Assigned the driver to the xf86ConfigLayout
+[   177.424] (II) LoadModule: "ast"
+[   177.425] (WW) Warning, couldn't open module ast
+[   177.425] (EE) Failed to load module "ast" (module does not exist, 0)
+[   177.425] (II) LoadModule: "amdgpu"
+[   177.425] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[   177.425] (II) Module amdgpu: vendor="X.Org Foundation"
+[   177.425] 	compiled for 1.20.13, module version = 19.1.0
+[   177.425] 	Module class: X.Org Video Driver
+[   177.425] 	ABI class: X.Org Video Driver, version 24.1
+[   177.425] (II) LoadModule: "ati"
+[   177.426] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[   177.426] (II) Module ati: vendor="X.Org Foundation"
+[   177.426] 	compiled for 1.20.5, module version = 19.1.0
+[   177.426] 	Module class: X.Org Video Driver
+[   177.426] 	ABI class: X.Org Video Driver, version 24.0
+[   177.428] (II) LoadModule: "modesetting"
+[   177.428] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[   177.428] (II) Module modesetting: vendor="X.Org Foundation"
+[   177.428] 	compiled for 1.20.13, module version = 1.20.13
+[   177.428] 	Module class: X.Org Video Driver
+[   177.428] 	ABI class: X.Org Video Driver, version 24.1
+[   177.428] (II) LoadModule: "fbdev"
+[   177.429] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[   177.429] (II) Module fbdev: vendor="X.Org Foundation"
+[   177.429] 	compiled for 1.20.1, module version = 0.5.0
+[   177.429] 	Module class: X.Org Video Driver
+[   177.429] 	ABI class: X.Org Video Driver, version 24.0
+[   177.429] (II) LoadModule: "vesa"
+[   177.429] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[   177.429] (II) Module vesa: vendor="X.Org Foundation"
+[   177.429] 	compiled for 1.20.4, module version = 2.4.0
+[   177.429] 	Module class: X.Org Video Driver
+[   177.429] 	ABI class: X.Org Video Driver, version 24.0
+[   177.429] (II) Applying OutputClass "AMDgpu" to /dev/dri/card1
+[   177.429] 	loading driver: amdgpu
+[   177.429] (==) Matched ast as autoconfigured driver 0
+[   177.429] (==) Matched amdgpu as autoconfigured driver 1
+[   177.429] (==) Matched ati as autoconfigured driver 2
+[   177.429] (==) Matched modesetting as autoconfigured driver 3
+[   177.429] (==) Matched fbdev as autoconfigured driver 4
+[   177.429] (==) Matched vesa as autoconfigured driver 5
+[   177.429] (==) Assigned the driver to the xf86ConfigLayout
+[   177.429] (II) LoadModule: "ast"
+[   177.429] (WW) Warning, couldn't open module ast
+[   177.429] (EE) Failed to load module "ast" (module does not exist, 0)
+[   177.429] (II) LoadModule: "amdgpu"
+[   177.429] (II) Loading /usr/lib/xorg/modules/drivers/amdgpu_drv.so
+[   177.429] (II) Module amdgpu: vendor="X.Org Foundation"
+[   177.429] 	compiled for 1.20.13, module version = 19.1.0
+[   177.429] 	Module class: X.Org Video Driver
+[   177.429] 	ABI class: X.Org Video Driver, version 24.1
+[   177.429] (II) LoadModule: "ati"
+[   177.430] (II) Loading /usr/lib/xorg/modules/drivers/ati_drv.so
+[   177.430] (II) Module ati: vendor="X.Org Foundation"
+[   177.430] 	compiled for 1.20.5, module version = 19.1.0
+[   177.430] 	Module class: X.Org Video Driver
+[   177.430] 	ABI class: X.Org Video Driver, version 24.0
+[   177.430] (II) LoadModule: "modesetting"
+[   177.430] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[   177.430] (II) Module modesetting: vendor="X.Org Foundation"
+[   177.430] 	compiled for 1.20.13, module version = 1.20.13
+[   177.430] 	Module class: X.Org Video Driver
+[   177.430] 	ABI class: X.Org Video Driver, version 24.1
+[   177.430] (II) UnloadModule: "modesetting"
+[   177.430] (II) Unloading modesetting
+[   177.430] (II) Failed to load module "modesetting" (already loaded, 0)
+[   177.430] (II) LoadModule: "fbdev"
+[   177.430] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[   177.430] (II) Module fbdev: vendor="X.Org Foundation"
+[   177.430] 	compiled for 1.20.1, module version = 0.5.0
+[   177.430] 	Module class: X.Org Video Driver
+[   177.430] 	ABI class: X.Org Video Driver, version 24.0
+[   177.430] (II) UnloadModule: "fbdev"
+[   177.430] (II) Unloading fbdev
+[   177.430] (II) Failed to load module "fbdev" (already loaded, 0)
+[   177.430] (II) LoadModule: "vesa"
+[   177.430] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[   177.430] (II) Module vesa: vendor="X.Org Foundation"
+[   177.430] 	compiled for 1.20.4, module version = 2.4.0
+[   177.430] 	Module class: X.Org Video Driver
+[   177.430] 	ABI class: X.Org Video Driver, version 24.0
+[   177.430] (II) UnloadModule: "vesa"
+[   177.430] (II) Unloading vesa
+[   177.430] (II) Failed to load module "vesa" (already loaded, 0)
+[   177.430] (II) AMDGPU: Driver for AMD Radeon:
+	All GPUs supported by the amdgpu kernel driver
+[   177.430] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[   177.430] (II) FBDEV: driver for framebuffer: fbdev
+[   177.430] (II) VESA: driver for VESA chipsets: vesa
+[   177.430] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[   177.430] (II) modeset(0): using drv /dev/dri/card0
+[   177.430] (WW) Falling back to old probe method for fbdev
+[   177.430] (II) Loading sub module "fbdevhw"
+[   177.430] (II) LoadModule: "fbdevhw"
+[   177.431] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[   177.431] (II) Module fbdevhw: vendor="X.Org Foundation"
+[   177.431] 	compiled for 1.20.13, module version = 0.0.2
+[   177.431] 	ABI class: X.Org Video Driver, version 24.1
+[   177.431] (EE) open /dev/fb0: Permission denied
+[   177.431] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[   177.431] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[   177.431] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[   177.431] (==) modeset(0): RGB weight 888
+[   177.431] (==) modeset(0): Default visual is TrueColor
+[   177.431] (II) Loading sub module "glamoregl"
+[   177.431] (II) LoadModule: "glamoregl"
+[   177.431] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[   177.435] (II) Module glamoregl: vendor="X.Org Foundation"
+[   177.435] 	compiled for 1.20.13, module version = 1.0.1
+[   177.435] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   177.465] (II) modeset(0): Refusing to try glamor on llvmpipe
+[   177.467] (EE) modeset(0): glamor initialization failed
+[   177.467] (II) modeset(0): ShadowFB: preferred YES, enabled YES
+[   177.467] (II) modeset(0): Double-buffered shadow updates: on
+[   177.572] (II) modeset(0): Output VGA-1 has no monitor section
+[   177.676] (II) modeset(0): EDID for output VGA-1
+[   177.676] (II) modeset(0): Manufacturer: DEL  Model: f03e  Serial#: 828004435
+[   177.676] (II) modeset(0): Year: 2011  Week: 29
+[   177.676] (II) modeset(0): EDID Version: 1.3
+[   177.676] (II) modeset(0): Analog Display Input,  Input Voltage Level: 0.700/0.300 V
+[   177.676] (II) modeset(0): Sync:  Separate  Composite  SyncOnGreen
+[   177.676] (II) modeset(0): Max Image Size [cm]: horiz.: 41  vert.: 23
+[   177.676] (II) modeset(0): Gamma: 2.20
+[   177.676] (II) modeset(0): DPMS capabilities: StandBy Suspend Off; RGB/Color Display
+[   177.676] (II) modeset(0): First detailed timing is preferred mode
+[   177.676] (II) modeset(0): redX: 0.643 redY: 0.342   greenX: 0.313 greenY: 0.618
+[   177.676] (II) modeset(0): blueX: 0.153 blueY: 0.059   whiteX: 0.313 whiteY: 0.329
+[   177.676] (II) modeset(0): Supported established timings:
+[   177.676] (II) modeset(0): 720x400@70Hz
+[   177.676] (II) modeset(0): 640x480@60Hz
+[   177.676] (II) modeset(0): 640x480@75Hz
+[   177.676] (II) modeset(0): 800x600@60Hz
+[   177.676] (II) modeset(0): 800x600@75Hz
+[   177.676] (II) modeset(0): 1024x768@60Hz
+[   177.676] (II) modeset(0): 1024x768@75Hz
+[   177.676] (II) modeset(0): 1280x1024@75Hz
+[   177.676] (II) modeset(0): Manufacturer's mask: 0
+[   177.676] (II) modeset(0): Supported detailed timing:
+[   177.676] (II) modeset(0): clock: 85.5 MHz   Image Size:  410 x 230 mm
+[   177.676] (II) modeset(0): h_active: 1366  h_sync: 1436  h_sync_end 1579 h_blank_end 1792 h_border: 0
+[   177.676] (II) modeset(0): v_active: 768  v_sync: 771  v_sync_end 774 v_blanking: 798 v_border: 0
+[   177.676] (II) modeset(0): Serial No: 3XNMH17J1ZXS
+[   177.676] (II) modeset(0): Monitor name: DELL E1912H
+[   177.676] (II) modeset(0): Ranges: V min: 56 V max: 75 Hz, H min: 30 H max: 83 kHz, PixClock max 95 MHz
+[   177.676] (II) modeset(0): EDID (in hex):
+[   177.676] (II) modeset(0): 	00ffffffffffff0010ac3ef053585a31
+[   177.676] (II) modeset(0): 	1d1501030e291778eaa545a457509e27
+[   177.676] (II) modeset(0): 	0f5054a54b0001010101010101010101
+[   177.676] (II) modeset(0): 	010101010101662156aa51001e30468f
+[   177.676] (II) modeset(0): 	33009ae61000001e000000ff0033584e
+[   177.676] (II) modeset(0): 	4d4831374a315a58530a000000fc0044
+[   177.676] (II) modeset(0): 	454c4c204531393132480a20000000fd
+[   177.676] (II) modeset(0): 	00384b1e5309000a2020202020200093
+[   177.676] (II) modeset(0): Not using mode "1280x1024" (bad mode clock/interlace/doublescan)
+[   177.676] (II) modeset(0): Printing probed modes for output VGA-1
+[   177.676] (II) modeset(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[   177.676] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   177.676] (II) modeset(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[   177.676] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   177.676] (II) modeset(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[   177.676] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   177.676] (II) modeset(0): Output VGA-1 connected
+[   177.676] (II) modeset(0): Using exact sizes for initial modes
+[   177.676] (II) modeset(0): Output VGA-1 using initial mode 1024x768 +0+0
+[   177.676] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[   177.676] (==) modeset(0): DPI set to (96, 96)
+[   177.676] (II) Loading sub module "fb"
+[   177.676] (II) LoadModule: "fb"
+[   177.676] (II) Loading /usr/lib/xorg/modules/libfb.so
+[   177.676] (II) Module fb: vendor="X.Org Foundation"
+[   177.676] 	compiled for 1.20.13, module version = 1.0.0
+[   177.676] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   177.676] (II) Loading sub module "shadow"
+[   177.676] (II) LoadModule: "shadow"
+[   177.676] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[   177.676] (II) Module shadow: vendor="X.Org Foundation"
+[   177.676] 	compiled for 1.20.13, module version = 1.1.0
+[   177.676] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   177.676] (==) AMDGPU(G0): Depth 24, (--) framebuffer bpp 32
+[   177.676] (II) AMDGPU(G0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
+[   177.676] (==) AMDGPU(G0): Default visual is TrueColor
+[   177.676] (==) AMDGPU(G0): RGB weight 888
+[   177.676] (II) AMDGPU(G0): Using 8 bits per RGB (8 bit DAC)
+[   177.676] (--) AMDGPU(G0): Chipset: "AMD Radeon Pro WX2100" (ChipID = 0x6995)
+[   177.676] (II) Loading sub module "fb"
+[   177.676] (II) LoadModule: "fb"
+[   177.676] (II) Loading /usr/lib/xorg/modules/libfb.so
+[   177.676] (II) Module fb: vendor="X.Org Foundation"
+[   177.676] 	compiled for 1.20.13, module version = 1.0.0
+[   177.676] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   177.676] (II) Loading sub module "dri2"
+[   177.676] (II) LoadModule: "dri2"
+[   177.676] (II) Module "dri2" already built-in
+[   177.684] (II) Loading sub module "glamoregl"
+[   177.684] (II) LoadModule: "glamoregl"
+[   177.684] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[   177.684] (II) Module glamoregl: vendor="X.Org Foundation"
+[   177.684] 	compiled for 1.20.13, module version = 1.0.1
+[   177.684] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   177.688] (II) AMDGPU(G0): glamor X acceleration enabled on AMD Radeon Pro WX2100 (POLARIS12, DRM 3.42.0, 5.15.0-71-generic, LLVM 12.0.0)
+[   177.688] (II) AMDGPU(G0): glamor detected, initialising EGL layer.
+[   177.688] (==) AMDGPU(G0): TearFree property default: auto
+[   177.688] (II) AMDGPU(G0): Output DisplayPort-1-0 has no monitor section
+[   177.689] (II) AMDGPU(G0): Output DisplayPort-1-1 has no monitor section
+[   177.689] (II) AMDGPU(G0): Output DisplayPort-1-2 has no monitor section
+[   177.689] (II) AMDGPU(G0): EDID for output DisplayPort-1-0
+[   177.689] (II) AMDGPU(G0): EDID for output DisplayPort-1-1
+[   177.689] (II) AMDGPU(G0): EDID for output DisplayPort-1-2
+[   177.689] (II) AMDGPU(G0): mem size init: gart size :bf86b000 vram size: s:7f2d0000 visible:7f2d0000
+[   177.689] (==) AMDGPU(G0): DPI set to (96, 96)
+[   177.689] (==) AMDGPU(G0): Using gamma correction (1.0, 1.0, 1.0)
+[   177.689] (II) Loading sub module "ramdac"
+[   177.689] (II) LoadModule: "ramdac"
+[   177.689] (II) Module "ramdac" already built-in
+[   177.689] (II) UnloadModule: "fbdev"
+[   177.689] (II) Unloading fbdev
+[   177.689] (II) UnloadSubModule: "fbdevhw"
+[   177.689] (II) Unloading fbdevhw
+[   177.689] (II) UnloadModule: "vesa"
+[   177.689] (II) Unloading vesa
+[   177.689] (==) modeset(0): Backing store enabled
+[   177.689] (==) modeset(0): Silken mouse enabled
+[   177.689] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[   177.689] (==) modeset(0): DPMS enabled
+[   177.689] (II) AMDGPU(G0): [DRI2] Setup complete
+[   177.689] (II) AMDGPU(G0): [DRI2]   DRI driver: radeonsi
+[   177.689] (II) AMDGPU(G0): [DRI2]   VDPAU driver: radeonsi
+[   177.689] (II) AMDGPU(G0): Front buffer pitch: 4096 bytes
+[   177.689] (II) AMDGPU(G0): SYNC extension fences enabled
+[   177.689] (II) AMDGPU(G0): Present extension enabled
+[   177.689] (==) AMDGPU(G0): DRI3 enabled
+[   177.689] (==) AMDGPU(G0): Backing store enabled
+[   177.689] (II) AMDGPU(G0): Direct rendering enabled
+[   177.733] (II) AMDGPU(G0): Use GLAMOR acceleration.
+[   177.733] (II) AMDGPU(G0): Acceleration enabled
+[   177.733] (==) AMDGPU(G0): DPMS enabled
+[   177.733] (==) AMDGPU(G0): Silken mouse enabled
+[   177.735] (II) Initializing extension Generic Event Extension
+[   177.735] (II) Initializing extension SHAPE
+[   177.735] (II) Initializing extension MIT-SHM
+[   177.735] (II) Initializing extension XInputExtension
+[   177.736] (II) Initializing extension XTEST
+[   177.736] (II) Initializing extension BIG-REQUESTS
+[   177.736] (II) Initializing extension SYNC
+[   177.736] (II) Initializing extension XKEYBOARD
+[   177.736] (II) Initializing extension XC-MISC
+[   177.736] (II) Initializing extension SECURITY
+[   177.736] (II) Initializing extension XFIXES
+[   177.737] (II) Initializing extension RENDER
+[   177.737] (II) Initializing extension RANDR
+[   177.737] (II) Initializing extension COMPOSITE
+[   177.737] (II) Initializing extension DAMAGE
+[   177.737] (II) Initializing extension MIT-SCREEN-SAVER
+[   177.737] (II) Initializing extension DOUBLE-BUFFER
+[   177.737] (II) Initializing extension RECORD
+[   177.738] (II) Initializing extension DPMS
+[   177.738] (II) Initializing extension Present
+[   177.738] (II) Initializing extension DRI3
+[   177.738] (II) Initializing extension X-Resource
+[   177.738] (II) Initializing extension XVideo
+[   177.738] (II) Initializing extension XVideo-MotionCompensation
+[   177.738] (II) Initializing extension SELinux
+[   177.738] (II) SELinux: Disabled on system
+[   177.738] (II) Initializing extension GLX
+[   177.738] (II) AIGLX: Screen 0 is not DRI2 capable
+[   177.742] (II) IGLX: Loaded and initialized swrast
+[   177.742] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[   177.742] (II) Initializing extension XFree86-VidModeExtension
+[   177.742] (II) Initializing extension XFree86-DGA
+[   177.742] (II) Initializing extension XFree86-DRI
+[   177.742] (II) Initializing extension DRI2
+[   177.743] (II) modeset(0): Damage tracking initialized
+[   177.743] (II) modeset(0): Setting screen physical size to 270 x 203
+[   177.803] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[   177.803] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[   177.803] (II) LoadModule: "libinput"
+[   177.803] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[   177.805] (II) Module libinput: vendor="X.Org Foundation"
+[   177.805] 	compiled for 1.20.4, module version = 0.29.0
+[   177.805] 	Module class: X.Org XInput Driver
+[   177.805] 	ABI class: X.Org XInput driver, version 24.1
+[   177.805] (II) Using input driver 'libinput' for 'Power Button'
+[   177.806] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 28 paused 0
+[   177.806] (**) Power Button: always reports core events
+[   177.806] (**) Option "Device" "/dev/input/event0"
+[   177.807] (**) Option "_source" "server/udev"
+[   177.808] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   177.808] (II) event0  - Power Button: device is a keyboard
+[   177.808] (II) event0  - Power Button: device removed
+[   177.808] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[   177.808] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   177.809] (**) Option "xkb_model" "pc105"
+[   177.809] (**) Option "xkb_layout" "us"
+[   177.809] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[   177.810] (II) event0  - Power Button: device is a keyboard
+[   177.810] (II) config/udev: Adding input device CASUE USB KB (/dev/input/event1)
+[   177.810] (**) CASUE USB KB: Applying InputClass "libinput keyboard catchall"
+[   177.810] (II) Using input driver 'libinput' for 'CASUE USB KB'
+[   177.811] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 31 paused 0
+[   177.811] (**) CASUE USB KB: always reports core events
+[   177.811] (**) Option "Device" "/dev/input/event1"
+[   177.811] (**) Option "_source" "server/udev"
+[   177.813] (II) event1  - CASUE USB KB: is tagged by udev as: Keyboard
+[   177.813] (II) event1  - CASUE USB KB: device is a keyboard
+[   177.813] (II) event1  - CASUE USB KB: device removed
+[   177.813] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.0/0003:2A7A:9A27.0001/input/input1/event1"
+[   177.813] (II) XINPUT: Adding extended input device "CASUE USB KB" (type: KEYBOARD, id 7)
+[   177.813] (**) Option "xkb_model" "pc105"
+[   177.813] (**) Option "xkb_layout" "us"
+[   177.815] (II) event1  - CASUE USB KB: is tagged by udev as: Keyboard
+[   177.815] (II) event1  - CASUE USB KB: device is a keyboard
+[   177.816] (II) config/udev: Adding input device CASUE USB KB Consumer Control (/dev/input/event2)
+[   177.816] (**) CASUE USB KB Consumer Control: Applying InputClass "libinput keyboard catchall"
+[   177.816] (II) Using input driver 'libinput' for 'CASUE USB KB Consumer Control'
+[   177.817] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 32 paused 0
+[   177.817] (**) CASUE USB KB Consumer Control: always reports core events
+[   177.817] (**) Option "Device" "/dev/input/event2"
+[   177.817] (**) Option "_source" "server/udev"
+[   177.818] (II) event2  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   177.818] (II) event2  - CASUE USB KB Consumer Control: device is a keyboard
+[   177.818] (II) event2  - CASUE USB KB Consumer Control: device removed
+[   177.818] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:2A7A:9A27.0002/input/input2/event2"
+[   177.818] (II) XINPUT: Adding extended input device "CASUE USB KB Consumer Control" (type: KEYBOARD, id 8)
+[   177.818] (**) Option "xkb_model" "pc105"
+[   177.818] (**) Option "xkb_layout" "us"
+[   177.819] (II) event2  - CASUE USB KB Consumer Control: is tagged by udev as: Keyboard
+[   177.820] (II) event2  - CASUE USB KB Consumer Control: device is a keyboard
+[   177.820] (II) config/udev: Adding input device CASUE USB KB System Control (/dev/input/event3)
+[   177.820] (**) CASUE USB KB System Control: Applying InputClass "libinput keyboard catchall"
+[   177.820] (II) Using input driver 'libinput' for 'CASUE USB KB System Control'
+[   177.821] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 33 paused 0
+[   177.821] (**) CASUE USB KB System Control: always reports core events
+[   177.821] (**) Option "Device" "/dev/input/event3"
+[   177.821] (**) Option "_source" "server/udev"
+[   177.822] (II) event3  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   177.823] (II) event3  - CASUE USB KB System Control: device is a keyboard
+[   177.823] (II) event3  - CASUE USB KB System Control: device removed
+[   177.823] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4:1.1/0003:2A7A:9A27.0002/input/input3/event3"
+[   177.823] (II) XINPUT: Adding extended input device "CASUE USB KB System Control" (type: KEYBOARD, id 9)
+[   177.823] (**) Option "xkb_model" "pc105"
+[   177.823] (**) Option "xkb_layout" "us"
+[   177.824] (II) event3  - CASUE USB KB System Control: is tagged by udev as: Keyboard
+[   177.824] (II) event3  - CASUE USB KB System Control: device is a keyboard
+[   177.825] (II) config/udev: Adding input device SIGMACHIP Usb Mouse (/dev/input/event4)
+[   177.825] (**) SIGMACHIP Usb Mouse: Applying InputClass "libinput pointer catchall"
+[   177.825] (II) Using input driver 'libinput' for 'SIGMACHIP Usb Mouse'
+[   177.826] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 34 paused 0
+[   177.826] (**) SIGMACHIP Usb Mouse: always reports core events
+[   177.826] (**) Option "Device" "/dev/input/event4"
+[   177.826] (**) Option "_source" "server/udev"
+[   177.827] (II) event4  - SIGMACHIP Usb Mouse: is tagged by udev as: Mouse
+[   177.827] (II) event4  - SIGMACHIP Usb Mouse: device is a pointer
+[   177.827] (II) event4  - SIGMACHIP Usb Mouse: device removed
+[   177.827] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5:1.0/0003:1C4F:0034.0003/input/input4/event4"
+[   177.827] (II) XINPUT: Adding extended input device "SIGMACHIP Usb Mouse" (type: MOUSE, id 10)
+[   177.827] (**) Option "AccelerationScheme" "none"
+[   177.827] (**) SIGMACHIP Usb Mouse: (accel) selected scheme none/0
+[   177.827] (**) SIGMACHIP Usb Mouse: (accel) acceleration factor: 2.000
+[   177.828] (**) SIGMACHIP Usb Mouse: (accel) acceleration threshold: 4
+[   177.829] (II) event4  - SIGMACHIP Usb Mouse: is tagged by udev as: Mouse
+[   177.829] (II) event4  - SIGMACHIP Usb Mouse: device is a pointer
+[   177.829] (II) config/udev: Adding input device SIGMACHIP Usb Mouse (/dev/input/mouse0)
+[   177.829] (II) No input driver specified, ignoring this device.
+[   177.829] (II) This device may have been added with another device file.
+[   177.830] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event5)
+[   177.830] (II) No input driver specified, ignoring this device.
+[   177.830] (II) This device may have been added with another device file.
+[   177.830] (II) config/udev: Adding input device HDA Intel PCH Line (/dev/input/event6)
+[   177.830] (II) No input driver specified, ignoring this device.
+[   177.830] (II) This device may have been added with another device file.
+[   177.830] (II) config/udev: Adding input device HDA Intel PCH Line Out Front (/dev/input/event7)
+[   177.830] (II) No input driver specified, ignoring this device.
+[   177.830] (II) This device may have been added with another device file.
+[   177.831] (II) config/udev: Adding input device HDA Intel PCH Line Out Surround (/dev/input/event8)
+[   177.831] (II) No input driver specified, ignoring this device.
+[   177.831] (II) This device may have been added with another device file.
+[   177.831] (II) config/udev: Adding input device HDA Intel PCH Line Out CLFE (/dev/input/event11)
+[   177.831] (II) No input driver specified, ignoring this device.
+[   177.831] (II) This device may have been added with another device file.
+[   177.831] (II) config/udev: Adding input device HDA Intel PCH Line Out Side (/dev/input/event12)
+[   177.831] (II) No input driver specified, ignoring this device.
+[   177.831] (II) This device may have been added with another device file.
+[   177.832] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event9)
+[   177.832] (II) No input driver specified, ignoring this device.
+[   177.832] (II) This device may have been added with another device file.
+[   177.832] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=7 (/dev/input/event10)
+[   177.832] (II) No input driver specified, ignoring this device.
+[   177.832] (II) This device may have been added with another device file.
+[   177.833] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=8 (/dev/input/event13)
+[   177.833] (II) No input driver specified, ignoring this device.
+[   177.833] (II) This device may have been added with another device file.
+[   177.833] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=9 (/dev/input/event14)
+[   177.833] (II) No input driver specified, ignoring this device.
+[   177.833] (II) This device may have been added with another device file.
+[   177.833] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=10 (/dev/input/event15)
+[   177.833] (II) No input driver specified, ignoring this device.
+[   177.833] (II) This device may have been added with another device file.
+[   178.633] (II) modeset(0): EDID vendor "DEL", prod id 61502
+[   178.633] (II) modeset(0): Using EDID range info for horizontal sync
+[   178.633] (II) modeset(0): Using EDID range info for vertical refresh
+[   178.633] (II) modeset(0): Printing DDC gathered Modelines:
+[   178.633] (II) modeset(0): Modeline "1366x768"x0.0   85.50  1366 1436 1579 1792  768 771 774 798 +hsync +vsync (47.7 kHz eP)
+[   178.633] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[   178.633] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[   178.633] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[   178.633] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[   178.634] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[   178.634] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[   178.634] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[   178.634] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[   180.973] (II) modeset(0): Disabling kernel dirty updates, not required.

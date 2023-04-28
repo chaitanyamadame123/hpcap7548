@@ -1,0 +1,1352 @@
+
+
+
+
+
+<!DOCTYPE>
+
+<html>
+<head>
+
+ <script type="text/javascript" src='/feedbackSystem/js/jquery-1.11.3.js'></script> 
+
+
+<link rel="stylesheet" type="text/css" href='/feedbackSystem/css/template.css'>
+<link rel="stylesheet" type="text/css" href='/feedbackSystem/css/bootstrap.css'>
+
+<script>
+	$(document).ready(function() {
+		$("#theory-box").hide();
+		$("#lab-box").hide();
+	});
+
+	$(document).ready(function() {
+
+		$("#theory").click(function() {
+
+			$("#theory-box").show(700);
+			$("#lab-box").hide(700);
+
+		});
+	});
+
+	$(document).ready(function() {
+
+		$("#lab").click(function() {
+
+			$("#lab-box").show();
+			$("#theory-box").hide(500);
+
+		});
+	});
+
+	(function($) {
+		$(document).ready(function() {
+
+			$('#cssmenu > ul > li > a').click(function() {
+				$('#cssmenu li').removeClass('active');
+				$(this).closest('li').addClass('active');
+				var checkElement = $(this).next();
+				if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+					$(this).closest('li').removeClass('active');
+					checkElement.slideUp('normal');
+				}
+				if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+					$('#cssmenu ul ul:visible').slideUp('normal');
+					checkElement.slideDown('normal');
+				}
+				if ($(this).closest('li').find('ul').children().length == 0) {
+					return true;
+				} else {
+					return false;
+				}
+			});
+		});
+	})(jQuery);
+</script>
+
+</head>
+<body>
+	<table style="width:100%">
+		<tr>
+			<td  colspan="2">
+
+<div class="row">
+
+  <div class="col-md-12">
+  	<img class="img-responsive" width="100%" src='/feedbackSystem/images/Header.jpg'>
+  	<!-- <div style="text-align:right;"><form action="/feedbackSystem/login/logoutSession/logout"><input type="submit" id="logout" value="" style="background:url(../images/logout-icon-wt-text.png);  background-repeat:no-repeat; width:7%; height:25px; float:right; margin-left:110px; color:#0d3364 "  /></form></div> -->
+  </div>
+  
+</div>
+		</tr>
+		<tr>
+		<td  colspan="2">
+
+
+<!-- <div class="nav"> -->
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+function setFid(fid)
+{
+
+	$("#fid1").val(fid);
+	frm.submit();
+	}
+
+</script>
+<!--  <form action="/feedbackSystem/login/feed/feedbackpageShow" name="frm"
+		method="post">
+		<input type="hidden" name="fid1" id="fid1"> <a href="#"
+			id="theory" name="btn" class="action-button shadow animate blue">Theory</a>
+		<a href="#" id="lab" name="btn"
+			class="action-button shadow animate red">Lab</a> <br />
+		<br /> <br /> <br />
+		<center>
+			<div id="theory-box">
+
+				<div id="cssmenu">
+					<ul>
+						<li class='has-sub'><a><span>Mid Module</span></a>
+							<ul>
+
+								
+									
+
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240661)">
+													Apti&EC(Mr.Sumant Tiwari) for
+													Session 3 </a>
+											</div>
+										</li>
+									
+
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240701)">
+													Cloud&Dep(Mr.Atul Kahate) for
+													Session 3 </a>
+											</div>
+										</li>
+									
+									<li></li>
+								
+
+							</ul></li>
+						<li class='has-sub'><a><span>End Module</span></a>
+							<ul>
+
+
+
+								
+
+
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+			<br /> <br />
+
+
+
+			<div id="lab-box">
+				<div id="cssmenu">
+					<ul>
+						<li class='has-sub'><a><span>Mid Module</span></a>
+							<ul>
+								
+									
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(239144)">
+													LSP&PHP(Mr. Dheeraj Madhukar) for
+													Session 11 </a>
+											</div>
+											<br>
+										</li>
+										<li></li>
+									
+										<li>
+											<div style="text-align: left">
+												<a href='#' onclick="setFid(240716)">
+													Cloud&Dep(Mr. Vivek Kumar) for
+													Session 3 </a>
+											</div>
+											<br>
+										</li>
+										<li></li>
+									
+								
+							</ul></li>
+						<li class='has-sub'><a><span>End Module</span></a>
+							<ul>
+								
+							</ul></li>
+
+					</ul>
+				</div>
+
+
+			</div>
+		</center>
+	</form>
+</div>  -->
+
+<div id="wrapper">
+	<table style="width: 100%; line-height: 5px;">
+		<tr>
+			<td style="padding-left: 470px"><font color="#5e616a"><b>Welcome
+						to Online Feedback System</b></font></td>
+
+			<!--  <td
+				style="position: absolute; top: 230px; left: 16px; font-size: 16px;">Email-Id
+				: <font color="#1961a6">chaitanyamadame5@gmail.com</font> 
+			</td>-->
+
+			<!-- <td  align="RIGHT" >
+
+        </td> -->
+			<td style="width: 4%"><a href="/feedbackSystem/login/feede"
+				class="">Home <span class="glyphicon glyphicon-home"></span>
+			</a> |</td>
+
+			<td style="width: 10%"><a href="studentChangePassword" class="">&nbsp;Change
+					Password &nbsp;<span class="glyphicon glyphicon-lock"></span>
+			</a>&nbsp;|</td>
+
+
+
+			<td>
+				<form action="/feedbackSystem/login/logoutSession/logout">
+					<input type="submit" id="logout" value=""  />
+				</form>
+			</td>
+
+		</tr>
+		<!--<tr>
+			<td colspan="2" style="padding-left: 470px"><font
+				color="#1961a6"><b>230340141006(Chaitanya Anilkumar Madame)</b></font>
+			</td>
+
+			  <td style="padding-left:1px">Email-Id : chaitanyamadame5@gmail.com</td>-->
+
+		<!--	</tr>-->
+	</table>
+</div>
+<form action="/feedbackSystem/login/feed/feedbackpageShow" name="frm"
+	method="post">
+	<input type="hidden" name="fid1" id="fid1"> <input
+		type="hidden" name="formno1" id="formno1"
+		value=230340141006> <input type="hidden"
+		name="amount" id="amount" value="100">
+
+	<!-- <div id="menu"> -->
+	<ul id="nav">
+		<!-- <li><a href="/feedbackSystem/login/feedback/schedule" class="drop"><font size="2" face="Arial"><b>Schedule Feedback</b></font></a></li>
+<li><a href="/feedbackSystem/login/feedback/coursePlan" class="drop"><font size="2" face="Arial"><b>View Course Plan</b></font></a></li>
+<li><a href="#" class="drop"><font size="2" face="Arial"><b>Manage Faculty</b></font></a>
+<ul class="nav first">
+ <li><a href='/feedbackSystem/login/faculty/addFaculty'><font size="2" face="Arial">Add Faculty</font></a></li>
+            <li><a href='/feedbackSystem/login/faculty/viewFaculty'><font size="2" face="Arial">View Faculty </font></a></li>
+            <li><a href='/feedbackSystem/login/faculty/assign_faculty'><font size="2" face="Arial">Assign Faculty</font></a></li>
+            
+</ul>
+
+</li>
+ -->
+		<li><a href="#" class="drop">Theory</a>
+
+			<ul class="nav first">
+				<!-- <li>Menu 1</li>
+            <li>Menu 2</li> -->
+				<li><a href="#" class="right">Mid Module</a> 
+						<ul class="nav">
+							
+
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240661)">
+											Apti&EC(Mr.Sumant Tiwari) for
+											Session 3 </a>
+									</div>
+									
+								</li>
+
+							
+
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240701)">
+											Cloud&Dep(Mr.Atul Kahate) for
+											Session 3 </a>
+									</div>
+									
+								</li>
+
+							
+							<li></li>
+						</ul>
+					</li>
+				<li><a href="#" class="right">End Module</a>  <!--  <ul class="nav">
+	            <li>Menu 1</li>
+	            <li>Menu 2</li>
+	            <li>Menu 3</li>
+	            <li>Menu 4</li>
+	        </ul>		 --></li>
+			</ul></li>
+		<li><a href="#" class="drop">Lab</a>
+			<ul class="nav first">
+				<li><a href="#" class="right">Mid Module</a> 
+						<ul class="nav">
+							
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(239144)">
+											LSP&PHP(Mr. Dheeraj Madhukar) for
+											Session 11 </a>
+									</div>
+								
+								</li>
+								<li></li>
+
+							
+								<li>
+								
+								
+									<div style="text-align: left">
+										<a href='#' onclick="setFid(240716)">
+											Cloud&Dep(Mr. Vivek Kumar) for
+											Session 3 </a>
+									</div>
+								
+								</li>
+								<li></li>
+
+							
+						</ul>
+					</li>
+				<li><a href="#" class="right">End Module</a> </li>
+			</ul></li>
+<!--  test="true">  -->
+	<!--  	-->
+
+
+		<!--
+			<li><a
+				href="/feedbackSystem/login/feedback/viewMakeTransportationPayment"
+				class="drop">Transport Payment</a></li>
+		
+
+		
+		
+		-->
+
+
+		<!--  <li>Menu 2</li>
+    <li>Menu 3</li>
+    <li>Menu 4</li> -->
+	</ul>
+
+</form>
+
+<!-- <ul class="pull-right" id="nav">
+		<li> -->
+<div style="float: right; top: -19px;"
+	class="col-lg-3 col-md-3 col-sm-3">
+	<div style="right: 6px; border-style: ridge;"
+		class="panel panel-primary pull-right">
+
+		<div class="panel-heading" style="font-size: 12px">User Profile</div>
+		<table>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+
+			<!--  <tr class="panel-heading"><h5 class="glyphicon glyphicon-user" style="font-weight: bold; font-size: 12px;"> UserProfile</h5></tr>-->
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">Name</h6></font></td>
+				<td></td>
+				<td><h6>Chaitanya Anilkumar Madame</h6></td>
+			</tr>
+
+			<tr height="2"></tr>
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">PRN</h6></font></td>
+				<td></td>
+				<td><h6>230340141006</h6></td>
+			</tr>
+
+			<tr height="2"></tr>
+
+			<tr>
+				<td><font color="#1961a6"><h6 style="font-weight: bold;">Email</h6></font></td>
+				<td>&nbsp;&nbsp;</td>
+				<td style="overflow-wrap: anywhere; word-break: break-word;"><h6>chaitanyamadame5@gmail.com</h6></td>
+			</tr>
+
+
+		</table>
+	</div>
+</div>
+<!--</li>
+	</ul> -->
+
+
+
+		</tr>
+		<tr>
+		<td  colspan="2" align="center" ><div id="content"  >
+					
+
+
+<!DOCTYPE html >
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function isUnderScore(event) {
+		 var charCode = (event.which) ? event.which : event.keyCode;
+		 if(charCode==44 ||charCode==32||charCode==35 ||charCode==43 ||charCode==45){
+			 return true;
+		 }
+		 
+		 if (charCode > 31 && (charCode < 44 || charCode > 57)&&(charCode > 31 && (charCode < 65 || charCode > 90) &&
+			      (charCode < 97 || charCode > 122)))
+			      {
+			 alert("Special characters  like *,$,@,!,%,^,&,*,_(Quotes) are not allowed.");
+			 		return false;
+			      }
+		 else
+			 return true;
+		
+/* 
+		if ((event.keyCode >=91 && event.keyCode<=96) || (event.keyCode >=33 && event.keyCode<=42) || (event.keyCode >=58 && event.keyCode<=63) || (event.keyCode >=123 && event.keyCode<=126) || (event.keyCode=44) ||(event.keyCode=45) || (event.keyCode=47)) {
+			alert("Special characters  like *,',$,#,! are not allowed.");
+			return false;
+		} 
+			else
+			{
+			return true;
+		}
+ */
+	}
+	
+	function chkFeedback()
+	{
+		var radios = document.getElementsByTagName('input');
+		var value;
+		for (var i = 0; i < radios.length; i++) {
+		    if (radios[i].type === 'radio' && radios[i].checked) {
+		        // get value, set checked flag or do whatever you need to
+		        value = radios[i].value;       
+		    }
+		}
+		return false;
+	}
+</script>
+
+<script type="text/javascript">
+
+/*
+### jQuery Star Rating Plugin v4.11 - 2013-03-14 ###
+* Home: http://www.fyneworks.com/jquery/star-rating/
+* Code: http://code.google.com/p/jquery-star-rating-plugin/
+*
+	* Licensed under http://en.wikipedia.org/wiki/MIT_License
+###
+*/
+
+/*# AVOID COLLISIONS #*/
+;if(window.jQuery) (function($){
+/*# AVOID COLLISIONS #*/
+	
+	// IE6 Background Image Fix
+	if ((!$.support.opacity && !$.support.style)) try { document.execCommand("BackgroundImageCache", false, true)} catch(e) { };
+	// Thanks to http://www.visualjquery.com/rating/rating_redux.html
+	
+	// plugin initialization
+	$.fn.rating = function(options){
+		if(this.length==0) return this; // quick fail
+		
+		// Handle API methods
+		if(typeof arguments[0]=='string'){
+			// Perform API methods on individual elements
+			if(this.length>1){
+				var args = arguments;
+				return this.each(function(){
+					$.fn.rating.apply($(this), args);
+   });
+			};
+			// Invoke API method handler
+			$.fn.rating[arguments[0]].apply(this, $.makeArray(arguments).slice(1) || []);
+			// Quick exit...
+			return this;
+		};
+		
+		// Initialize options for this call
+		var options = $.extend(
+			{}/* new object */,
+			$.fn.rating.options/* default options */,
+			options || {} /* just-in-time options */
+		);
+		
+		// Allow multiple controls with the same name by making each call unique
+		$.fn.rating.calls++;
+		
+		// loop through each matched element
+		this
+		 .not('.star-rating-applied')
+			.addClass('star-rating-applied')
+		.each(function(){
+			
+			// Load control parameters / find context / etc
+			var control, input = $(this);
+			var eid = (this.name || 'unnamed-rating').replace(/\[|\]/g, '_').replace(/^\_+|\_+$/g,'');
+			var context = $(this.form || document.body);
+			
+			// FIX: http://code.google.com/p/jquery-star-rating-plugin/issues/detail?id=23
+			var raters = context.data('rating');
+			if(!raters || raters.call!=$.fn.rating.calls) raters = { count:0, call:$.fn.rating.calls };
+			var rater = raters[eid] || context.data('rating'+eid);
+			
+			// if rater is available, verify that the control still exists
+			if(rater) control = rater.data('rating');
+			
+			if(rater && control)//{// save a byte!
+				// add star to control if rater is available and the same control still exists
+				control.count++;
+				
+			//}// save a byte!
+			else{
+				// create new control if first star or control element was removed/replaced
+				
+				// Initialize options for this rater
+				control = $.extend(
+					{}/* new object */,
+					options || {} /* current call options */,
+					($.metadata? input.metadata(): ($.meta?input.data():null)) || {}, /* metadata options */
+					{ count:0, stars: [], inputs: [] }
+				);
+				
+				// increment number of rating controls
+				control.serial = raters.count++;
+				
+				// create rating element
+				rater = $('<span class="star-rating-control"/>');
+				input.before(rater);
+				
+				// Mark element for initialization (once all stars are ready)
+				rater.addClass('rating-to-be-drawn');
+				
+				// Accept readOnly setting from 'disabled' property
+				if(input.attr('disabled') || input.hasClass('disabled')) control.readOnly = true;
+				
+				// Accept required setting from class property (class='required')
+				if(input.hasClass('required')) control.required = true;
+				
+				// Create 'cancel' button
+				rater.append(
+					control.cancel = $('<div class="rating-cancel"><a title="' + control.cancel + '">' + control.cancelValue + '</a></div>')
+					.on('mouseover',function(){
+						$(this).rating('drain');
+						$(this).addClass('star-rating-hover');
+						//$(this).rating('focus');
+					})
+					.on('mouseout',function(){
+						$(this).rating('draw');
+						$(this).removeClass('star-rating-hover');
+						//$(this).rating('blur');
+					})
+					.on('click',function(){
+					 $(this).rating('select');
+					})
+					.data('rating', control)
+				);
+				
+			}; // first element of group
+			
+			// insert rating star (thanks Jan Fanslau rev125 for blind support https://code.google.com/p/jquery-star-rating-plugin/issues/detail?id=125)
+			var star = $('<div role="text" aria-label="'+ this.title +'" class="star-rating rater-'+ control.serial +'"><a title="' + (this.title || this.value) + '">' + this.value + '</a></div>');
+			rater.append(star);
+			
+			// inherit attributes from input element
+			if(this.id) star.attr('id', this.id);
+			if(this.className) star.addClass(this.className);
+			
+			// Half-stars?
+			if(control.half) control.split = 2;
+			
+			// Prepare division control
+			if(typeof control.split=='number' && control.split>0){
+				var stw = ($.fn.width ? star.width() : 0) || control.starWidth;
+				var spi = (control.count % control.split), spw = Math.floor(stw/control.split);
+				star
+				// restrict star's width and hide overflow (already in CSS)
+				.width(spw)
+				// move the star left by using a negative margin
+				// this is work-around to IE's stupid box model (position:relative doesn't work)
+				.find('a').css({ 'margin-left':'-'+ (spi*spw) +'px' })
+			};
+			
+			// readOnly?
+			if(control.readOnly)//{ //save a byte!
+				// Mark star as readOnly so user can customize display
+				star.addClass('star-rating-readonly');
+			//}  //save a byte!
+			else//{ //save a byte!
+			 // Enable hover css effects
+				star.addClass('star-rating-live')
+				 // Attach mouse events
+					.on('mouseover',function(){
+						$(this).rating('fill');
+						$(this).rating('focus');
+					})
+					.on('mouseout',function(){
+						$(this).rating('draw');
+						$(this).rating('blur');
+					})
+					.on('click',function(){
+						$(this).rating('select');
+					})
+				;
+			//}; //save a byte!
+			
+			// set current selection
+			if(this.checked)	control.current = star;
+			
+			// set current select for links
+			if(this.nodeName=="A"){
+   if($(this).hasClass('selected'))
+    control.current = star;
+  };
+			
+			// hide input element
+			input.hide();
+			
+			// backward compatibility, form element to plugin
+			input.on('change.rating',function(event){
+				if(event.selfTriggered) return false;
+   $(this).rating('select');
+  });
+			
+			// attach reference to star to input element and vice-versa
+			star.data('rating.input', input.data('rating.star', star));
+			
+			// store control information in form (or body when form not available)
+			control.stars[control.stars.length] = star[0];
+			control.inputs[control.inputs.length] = input[0];
+			control.rater = raters[eid] = rater;
+			control.context = context;
+			
+			input.data('rating', control);
+			rater.data('rating', control);
+			star.data('rating', control);
+			context.data('rating', raters);
+			context.data('rating'+eid, rater); // required for ajax forms
+ }); // each element
+		
+		// Initialize ratings (first draw)
+		$('.rating-to-be-drawn').rating('draw').removeClass('rating-to-be-drawn');
+		
+		return this; // don't break the chain...
+	};
+	
+	/*--------------------------------------------------------*/
+	
+	/*
+		### Core functionality and API ###
+	*/
+	$.extend($.fn.rating, {
+		// Used to append a unique serial number to internal control ID
+		// each time the plugin is invoked so same name controls can co-exist
+		calls: 0,
+		
+		focus: function(){
+			var control = this.data('rating'); if(!control) return this;
+			if(!control.focus) return this; // quick fail if not required
+			// find data for event
+			var input = $(this).data('rating.input') || $( this.tagName=='INPUT' ? this : null );
+  // focus handler, as requested by focusdigital.co.uk
+			if(control.focus) control.focus.apply(input[0], [input.val(), $('a', input.data('rating.star'))[0]]);
+		}, // $.fn.rating.focus
+		
+		blur: function(){
+			var control = this.data('rating'); if(!control) return this;
+			if(!control.blur) return this; // quick fail if not required
+			// find data for event
+			var input = $(this).data('rating.input') || $( this.tagName=='INPUT' ? this : null );
+  // blur handler, as requested by focusdigital.co.uk
+			if(control.blur) control.blur.apply(input[0], [input.val(), $('a', input.data('rating.star'))[0]]);
+		}, // $.fn.rating.blur
+		
+		fill: function(){ // fill to the current mouse position.
+			var control = this.data('rating'); if(!control) return this;
+			// do not execute when control is in read-only mode
+			if(control.readOnly) return;
+			// Reset all stars and highlight them up to this element
+			this.rating('drain');
+			this.prevAll().addBack().filter('.rater-'+ control.serial).addClass('star-rating-hover');
+		},// $.fn.rating.fill
+		
+		drain: function() { // drain all the stars.
+			var control = this.data('rating'); if(!control) return this;
+			// do not execute when control is in read-only mode
+			if(control.readOnly) return;
+			// Reset all stars
+			control.rater.children().filter('.rater-'+ control.serial).removeClass('star-rating-on').removeClass('star-rating-hover');
+		},// $.fn.rating.drain
+		
+		draw: function(){ // set value and stars to reflect current selection
+			var control = this.data('rating'); if(!control) return this;
+			// Clear all stars
+			this.rating('drain');
+			// Set control value
+			var current = $( control.current );//? control.current.data('rating.input') : null );
+			var starson = current.length ? current.prevAll().addBack().filter('.rater-'+ control.serial) : null;
+			if(starson)	starson.addClass('star-rating-on');
+			// Show/hide 'cancel' button
+			control.cancel[control.readOnly || control.required?'hide':'show']();
+			// Add/remove read-only classes to remove hand pointer
+			this.siblings()[control.readOnly?'addClass':'removeClass']('star-rating-readonly');
+		},// $.fn.rating.draw
+		
+		
+		
+		
+		
+		select: function(value,wantCallBack){ // select a value
+			var control = this.data('rating'); if(!control) return this;
+			// do not execute when control is in read-only mode
+			if(control.readOnly) return;
+			// clear selection
+			control.current = null;
+			// programmatically (based on user input)
+			if(typeof value!='undefined' || this.length>1){
+			 // select by index (0 based)
+				if(typeof value=='number')
+			 return $(control.stars[value]).rating('select',undefined,wantCallBack);
+				// select by literal value (must be passed as a string
+				if(typeof value=='string'){
+					//return
+					$.each(control.stars, function(){
+					//console.log($(this).data('rating.input'), $(this).data('rating.input').val(), value, $(this).data('rating.input').val()==value?'BINGO!':'');
+						if($(this).data('rating.input').val()==value) $(this).rating('select',undefined,wantCallBack);
+					});
+					// don't break the chain
+ 			return this;
+				};
+			}
+			else{
+				control.current = this[0].tagName=='INPUT' ?
+				 this.data('rating.star') :
+					(this.is('.rater-'+ control.serial) ? this : null);
+			};
+			// Update rating control state
+			this.data('rating', control);
+			// Update display
+			this.rating('draw');
+			// find current input and its sibblings
+			var current = $( control.current ? control.current.data('rating.input') : null );
+			var lastipt = $( control.inputs ).filter(':checked');
+			var deadipt = $( control.inputs ).not(current);
+			// check and uncheck elements as required
+			deadipt.prop('checked',false);//.removeAttr('checked');
+			current.prop('checked',true);//.attr('checked','checked');
+			// trigger change on current or last selected input
+			$(current.length? current : lastipt ).trigger({ type:'change', selfTriggered:true });
+			// click callback, as requested here: http://plugins.jquery.com/node/1655
+			if((wantCallBack || wantCallBack == undefined) && control.callback) control.callback.apply(current[0], [current.val(), $('a', control.current)[0]]);// callback event
+			// don't break the chain
+			return this;
+ },// $.fn.rating.select
+		
+		
+		
+		
+		
+		readOnly: function(toggle, disable){ // make the control read-only (still submits value)
+			var control = this.data('rating'); if(!control) return this;
+			// setread-only status
+			control.readOnly = toggle || toggle==undefined ? true : false;
+			// enable/disable control value submission
+			if(disable) $(control.inputs).attr("disabled", "disabled");
+			else     			$(control.inputs).removeAttr("disabled");
+			// Update rating control state
+			this.data('rating', control);
+			// Update display
+			this.rating('draw');
+		},// $.fn.rating.readOnly
+		
+		disable: function(){ // make read-only and never submit value
+			this.rating('readOnly', true, true);
+		},// $.fn.rating.disable
+		
+		enable: function(){ // make read/write and submit value
+			this.rating('readOnly', false, false);
+		}// $.fn.rating.select
+		
+});
+	
+	/*--------------------------------------------------------*/
+	
+	/*
+		### Default Settings ###
+		eg.: You can override default control like this:
+		$.fn.rating.options.cancel = 'Clear';
+	*/
+	$.fn.rating.options = { //$.extend($.fn.rating, { options: {
+			cancel: 'Cancel Rating',   // advisory title for the 'cancel' link
+			cancelValue: '',           // value to submit when user click the 'cancel' link
+			split: 0,                  // split the star into how many parts?
+			
+			// Width of star image in case the plugin can't work it out. This can happen if
+			// the jQuery.dimensions plugin is not available OR the image is hidden at installation
+			starWidth: 16//,
+			
+			//NB.: These don't need to be pre-defined (can be undefined/null) so let's save some code!
+			//half:     false,         // just a shortcut to control.split = 2
+			//required: false,         // disables the 'cancel' button so user can only select one of the specified values
+			//readOnly: false,         // disable rating plugin interaction/ values cannot be.one('change',		//focus:    function(){},  // executed when stars are focused
+			//blur:     function(){},  // executed when stars are focused
+			//callback: function(){},  // executed when a star is clicked
+}; //} });
+	
+	/*--------------------------------------------------------*/
+	
+	
+	  // auto-initialize plugin
+				$(function(){
+				 $('input[type=radio].star').rating();
+				});
+	
+	
+/*# AVOID COLLISIONS #*/
+})(jQuery);
+/*# AVOID COLLISIONS #*/
+
+</script>
+
+<style type="text/css">
+
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.rating-cancel, div.star-rating {
+	float: left;
+	width: 17px;
+	height: 15px;
+	text-indent: -999em;
+	cursor: pointer;
+	display: block;
+	background: transparent;
+	overflow: hidden
+}
+
+div.rating-cancel, div.rating-cancel a {
+	background: url('/feedbackSystem/images/delete.gif') no-repeat 0 -16px
+}
+
+div.star-rating, div.star-rating a {
+	background: url('/feedbackSystem/images/star.gif') no-repeat 0 0px
+}
+
+div.rating-cancel a, div.star-rating a {
+	display: block;
+	width: 16px;
+	height: 100%;
+	background-position: 0 0px;
+	border: 0
+}
+
+div.star-rating-on a {
+	background-position: 0 -16px !important
+}
+
+div.star-rating-hover a {
+	background-position: 0 -32px
+}
+/* Read Only CSS */
+div.star-rating-readonly a {
+	cursor: default !important
+}
+/* Partial Star CSS */
+div.star-rating {
+	background: transparent !important;
+	overflow: hidden !important
+}
+/* END jQuery.Rating Plugin CSS */
+</style>
+
+
+</head>
+<body>
+	<div style="margin-top: -155px;">
+		
+		
+		<form method="post" action="/feedbackSystem/login/feed/feedbackpage">
+			<input type="hidden" name="fid" value="240661">
+			
+				
+					
+						<center>
+							<font color="#5e616a"><b> Mid Module Faculty Feedback
+									
+										(Theory)
+										
+									
+							</b></font>
+						</center>
+					
+					
+					
+					
+				
+				<br />
+				<br />
+				<table class="table   table-hover" id="mainTable"
+					style="background-color: white; width: 58%;margin-top: 25px;">
+
+					
+
+						
+						
+						
+						
+							<tr style="font-weight: bold; color: #5F5FB6">
+								<td colspan="3">Center:C-DAC's  Advanced Computing Training School</td>
+							</tr>
+							<tr style="font-weight: bold; color: #5F5FB6">
+								<td colspan="3">Module: Apti&EC</td>
+							</tr>
+							<tr style="font-weight: bold; color: #5F5FB6">
+								<td colspan="3">Faculty: Mr.Sumant Tiwari</td>
+							</tr>
+						
+					
+					
+					
+					
+
+					
+
+						<input type="hidden" name="ques" value="1" />
+						
+							
+						
+						
+							
+								
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Faculty Initiative (How has the explanations, use of examples, assignments helped the learning process) </td>
+							<td>
+									
+									
+
+
+
+										<fieldset class="star">
+
+											<input type="radio" id="star4_1" name="rating_1"
+												value="1" class="star" title="Unsatisfactory"
+												required="required" /> <input type="radio"
+												id="star3_1" name="rating_1" value="2"
+												class="star" title="Good" /> <input type="radio"
+												id="star2_1" name="rating_1" value="3"
+												class="star" title="Very Good" /> <input type="radio"
+												id="star1_1" name="rating_1" value="4"
+												class="star" title="Excellent" />
+										</fieldset>
+										
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="2" />
+						
+							
+						
+						
+							
+								
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Faculty Punctuality</td>
+							<td>
+									
+									
+
+
+
+										<fieldset class="star">
+
+											<input type="radio" id="star4_2" name="rating_2"
+												value="1" class="star" title="Unsatisfactory"
+												required="required" /> <input type="radio"
+												id="star3_2" name="rating_2" value="2"
+												class="star" title="Good" /> <input type="radio"
+												id="star2_2" name="rating_2" value="3"
+												class="star" title="Very Good" /> <input type="radio"
+												id="star1_2" name="rating_2" value="4"
+												class="star" title="Excellent" />
+										</fieldset>
+										
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="3" />
+						
+							
+						
+						
+							
+								
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">How well are you able to understand (If your level of understanding is below good give the reason below)</td>
+							<td>
+									
+									
+
+
+
+										<fieldset class="star">
+
+											<input type="radio" id="star4_3" name="rating_3"
+												value="1" class="star" title="Unsatisfactory"
+												required="required" /> <input type="radio"
+												id="star3_3" name="rating_3" value="2"
+												class="star" title="Good" /> <input type="radio"
+												id="star2_3" name="rating_3" value="3"
+												class="star" title="Very Good" /> <input type="radio"
+												id="star1_3" name="rating_3" value="4"
+												class="star" title="Excellent" />
+										</fieldset>
+										
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="4" />
+						
+							
+						
+						
+							
+								
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Faculty‚Äôs responsiveness and interaction with the students</td>
+							<td>
+									
+									
+
+
+
+										<fieldset class="star">
+
+											<input type="radio" id="star4_4" name="rating_4"
+												value="1" class="star" title="Unsatisfactory"
+												required="required" /> <input type="radio"
+												id="star3_4" name="rating_4" value="2"
+												class="star" title="Good" /> <input type="radio"
+												id="star2_4" name="rating_4" value="3"
+												class="star" title="Very Good" /> <input type="radio"
+												id="star1_4" name="rating_4" value="4"
+												class="star" title="Excellent" />
+										</fieldset>
+										
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="5" />
+						
+							
+								
+									
+										
+											<tr>
+												<td colspan="4"><b>Reason Out why the level of
+														understanding is below good? (Mark as YES/NO)</b></td>
+											</tr>
+											
+										
+									
+									
+								
+							
+						
+						
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Faculty Explanation was not clear </td>
+							<td>
+									
+									
+
+									
+										<input type="radio" name="yesRemark5" value="Y"
+											required="required" />&nbsp YES &nbsp &nbsp<input
+											type="radio" name="yesRemark5" value="N"
+											class="Check" id="hi5" onclick="myf()" />&nbsp NO
+				<br />
+										
+											
+												<p>(If your option is Yes then mention the topics and
+													points which were not clear)</p>
+											
+											
+										
+
+										<input type="text" name="review5" size="50"
+											id="hi51"
+											onkeypress="return isUnderScore(event);" />
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="6" />
+						
+							
+								
+									
+										
+									
+									
+								
+							
+						
+						
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Lack of opportunity to ask question</td>
+							<td>
+									
+
+										<input type="radio" name="yes6" value="Y"
+											required="required" />&nbsp YES &nbsp &nbsp<input
+											type="radio" name="yes6" value="N" class="Check"
+											id="hi6" onclick="myf()" />&nbsp NO
+				<br />
+									
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="7" />
+						
+							
+								
+									
+										
+									
+									
+								
+							
+						
+						
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Your lack of preparation</td>
+							<td>
+									
+
+										<input type="radio" name="yes7" value="Y"
+											required="required" />&nbsp YES &nbsp &nbsp<input
+											type="radio" name="yes7" value="N" class="Check"
+											id="hi7" onclick="myf()" />&nbsp NO
+				<br />
+									
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="8" />
+						
+							
+								
+									
+										
+									
+									
+								
+							
+						
+						
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Your lack of concentration or participation in the class</td>
+							<td>
+									
+
+										<input type="radio" name="yes8" value="Y"
+											required="required" />&nbsp YES &nbsp &nbsp<input
+											type="radio" name="yes8" value="N" class="Check"
+											id="hi8" onclick="myf()" />&nbsp NO
+				<br />
+									
+									
+
+									
+
+									
+								</td>
+						</tr>
+
+					
+
+						<input type="hidden" name="ques" value="27" />
+						
+							
+						
+						
+							
+						
+
+						<tr>
+							<td colspan="2" style="text-align: left;">Others(e.g. Due to academic background etc.)</td>
+							<td>
+									
+									
+
+									
+
+									
+										<textarea rows="3" cols="50" name="comments"
+											onkeypress="return isUnderScore(event);"></textarea>
+									
+								</td>
+						</tr>
+
+					
+
+					<tr>
+						<td colspan='3' align="center"><input type="submit"
+							value="submit" /></td>
+					</tr>
+					<tr>
+						<td colspan="3"><font color="red">All fields are
+								complulsory</font></td>
+					</tr>
+					<tr>
+						<td colspan="3"></td>
+					</tr>
+					<tr>
+				
+						<td colspan="3"><font>TCNM_DI_29_R00</font></td>
+						
+					</tr>
+				</table>
+			
+		</form>
+	
+	</div>
+</body>
+</html>
+
+				</div>
+				</td>
+		</tr>
+		
+
+		<tr>
+			<td  colspan="2" align="center">
+				<div id="footer" class="changeFont">
+					2016 C-DAC ¬© All Rights Reserved
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+»Ì◊≥      dKCudKCvEÑºådKCv   y    O^partitionKey=%28https%2Ccdac.in%29,~1682653944,:https://actsfeedback.cdac.in/feedbackSystem/login/feed/feedbackpageShow necko:classified 1 strongly-framed 1 security-info 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 request-method POST response-head HTTP/1.1 200 
+Server: nginx/1.14.1
+Date: Fri, 28 Apr 2023 03:55:31 GMT
+Content-Type: text/html;charset=utf-8
+Content-Language: en-US
+ original-response-headers Server: nginx/1.14.1
+Date: Fri, 28 Apr 2023 03:55:31 GMT
+Content-Type: text/html;charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Language: en-US
+ ctid 1 uncompressed-len 0 net-response-time-onstart 774 net-response-time-onstop 800   ç	
